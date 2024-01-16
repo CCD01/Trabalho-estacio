@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="home" class="li-menu">home</li>
+                <li id="receitas" class="li-menu">receitas</li>
+                <li id="cadastro" class="li-menu">cadastro</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-div">
+            
+        <section class="menu-item">
+            <img class="logotipo" src="../public/logotipo.jpg" alt="logotipo.png">
+            <h1>Receitas do Chef Cristhian</h1>
+        </section>
+        <section class="menu-flex-item">
+            <p >Bem-vindo(a) ao nosso Cantinho Fit! 🌱✨ </p>
+            <p >Estamos felizes em recebê-lo(a) em nosso site dedicado a marmitas saudáveis e deliciosas.</p>
+        </section>
+        </div>
+    </main>
+    <footer>         &copy; Cris 2024. Todos os direitos reservados ao cris.
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('home').addEventListener('click', function () {
+                window.location.href = 'home.html';
+            });
+
+            document.getElementById('receitas').addEventListener('click', function () {
+                window.location.href = 'receitas.html';
+            });
+
+            document.getElementById('cadastro').addEventListener('click', function () {
+                window.location.href = 'cadastro.html';
+            });
+
+            var currentPage = window.location.pathname;
+        var menuItems = document.querySelectorAll('nav ul li');
+
+        menuItems.forEach(function (item) {
+            var itemPath = item.id.toLowerCase();
+            console.log('itemPath 02', itemPath)
+            console.log('currentPage.indexOf(itemPath) 02', currentPage) 
+            if (currentPage.indexOf(itemPath) !== -1) {
+                console.log("item 03", item)
+                item.classList.add('active');
+            } else {
+                console.log("item 04", item)
+                item.classList.remove('active');
+            }
+        });
+        });
+    </script>
+
+</body>
+
+</html>

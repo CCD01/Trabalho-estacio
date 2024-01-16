@@ -1,0 +1,102 @@
+body {
+    background-color: bisque;
+    display: flex; 
+    flex-direction: column; margin: 0; padding: 0; height: 100vh;
+}
+header {
+    position: fixed; top: 0; width: 100vw;
+
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    margin: 0
+    ;
+}
+menu { 
+    background-color: brown;
+}
+ nav {
+    background-color: darkred;
+    color: #fff;
+    padding: 10px;
+}
+
+.ul-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+} 
+ul {
+    margin: 0;
+    
+} 
+li {
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer{
+    background-color: darkred;
+    color:white;
+    text-align: center;
+    height: 30px;
+}
+.quadradinho{
+    display: flex;
+    padding: 0 10px;
+    /* height: 90%; */
+    margin-top: 45px;
+    flex: 1;
+    max-height: 90%;
+    margin-bottom: 10px;
+}
+.tabelinha {
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+background-color: white;
+margin: 5px;
+padding: 0 10px;
+border-radius: 5px;
+}
+.frango{
+    margin: 0 10px;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.list-meio{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+
+nav ul li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav ul li.active {
+    border-bottom: 2px solid #ff6600; /* Adapte a cor conforme necessário */
+    opacity: 1;
+    color: #ff6600; /* Adapte a cor conforme necessário */
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #0077cc; /* Adapte a cor conforme necessário */
+    opacity: 0.8;
+    color: #0077cc; /* Adapte a cor conforme necessário */
+}
